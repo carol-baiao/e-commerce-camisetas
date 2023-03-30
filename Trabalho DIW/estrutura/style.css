@@ -1,0 +1,25 @@
+
+
+  
+  /* Altera o tamanho das imagens do carrossel */
+  .carousel-item img {
+    width: 100%; /* Define a largura das imagens para preencher o contêiner */
+    height: 100%; /* Define a altura das imagens para preencher o contêiner */
+  }
+
+  .imgcamisas {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .carousel-inner img {
+    width: 80%;
+}
+
+ #pesquisa-rapida {
+  padding: 10px;
+ }
+
+ .lista-header {
+  text-decoration: none;
+ }

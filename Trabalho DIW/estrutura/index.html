@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos de futebol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a4a921028f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../imagens/sports_soccer_FILL0_wght400_GRAD0_opsz48.svg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class=".bg-secondary-subtle">
+    <header>
+        <!-- Barra de navegaçao -->
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <!-- Logo -->
+            <div class="container ">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagens/logoff-removebg-preview.png" alt="Logo FutFanatics" width="130" height="90">
+                    <h5 class="text-center text-info bg-dark fst-italic text-light "> A melhor loja de artigos de
+                        futebol do Brasil.</h5>
+                </a>
+            </div>
+            <div class="container-fluid ">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0  navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-info bg-dark text-light" aria-current="page"
+                                href="#">Camisetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info bg-dark text-light" href="#">Shorts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info bg-dark text-light" href="#">Jaquetas e Casacos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-info bg-dark text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Outros:</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                <li><a class="dropdown-item " href="#">Chuteiras</a></li>
+                                <li><a class="dropdown-item " href="#">Outras vestimentas</a></li>
+                                <li><a class="dropdown-item " href="#">Outros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Botao de pesquisa -->
+            <form class="d-flex" role="search">
+                <input class="form-control  me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success " type="submit">Pesquisar</button>
+            </form>
+            <!-- Botao de carrinho -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-light me-md-2" type="button"><i
+                        class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                <!--botão de login-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-light me-md-2" type="button">
+                        <i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <main>
+        <!--início pesquisa rápida-->
+        <div class="row">
+            <form action="" method="get" id="pesquisa-rapida"
+                class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-xxl-2 m-3 ms-5 border border-dark bg-secondary-subtle">
+                <fieldset>
+                    <legend>Pesquisa Rápida - Filtre o produto</legend>
+
+                    <label for="tipo-produto">Tipo de produto:</label>
+                    <br>
+                    <select id="tipo-produto">
+                        <optgroup>
+                            <option value="">Tipo:</option>
+                            <option value="">Camisas de time</option>
+                            <option value="">Camisas de seleção</option>
+                            <option value="">Shorts</option>
+                            <option value="">Calçados</option>
+                            <option value="">Acessórios</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="marca-produto">Marca:</label>
+                    <br>
+                    <select id="marca-produto">
+                        <optgroup>
+                            <option value="">Marca:</option>
+                            <option value="">Adidas</option>
+                            <option value="">Nike</option>
+                            <option value="">Puma</option>
+                            <option value="">Umbro</option>
+                            <option value="">Kappa</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="tamanho-produto">Tamanho:</label>
+                    <br>
+                    <select id="tamanho-produto">
+                        <optgroup label="Masculino">
+                            <option value="">Tamanho:</option>
+                            <option value="">Infantil</option>
+                            <option value="">PP / P</option>
+                            <option value="">M</option>
+                            <option value="">G / GG / XG</option>
+                        </optgroup>
+                        <optgroup label="Feminino">
+                            <option value="">Infantil</option>
+                            <option value="">PP / P</option>
+                            <option value="">M</option>
+                            <option value="">G / GG / XG</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="fonte-produto">Times por região:</label>
+                    <br>
+                    <select id="marca-produto">
+                        <optgroup>
+                            <option value="">Região:</option>
+                            <option value="">Norte</option>
+                            <option value="">Nordeste</option>
+                            <option value="">Centro-Oeste</option>
+                            <option value="">Sudeste</option>
+                            <option value="">Sul</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="input-preco">Preço:</label>
+                    <br>
+                    <input type="search" name="" id="input-preco" placeholder="R$ mín." size="5">
+                    <input type="search" name="" id="input-preco" placeholder="R$ máx." size="5">
+                    <br>
+                    <br>
+                    <button type="submit" id="procurar-produto"
+                        class="submit-form justify-content-center">Procurar</button>
+
+                </fieldset>
+            </form>
+
+            <!--fim pesquisa rápida-->
+
+            <!--início carrossel-->
+            <div id="carouselExampleIndicators"
+                class="carousel slide col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 col-xxl-9 mb-3 mt-3 ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imagens/foto1carrossel.png" class="d-block w-100" alt="imagem 1 carrossel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagens/foto2carrosel.png" class="d-block w-100" alt="imagem 2 carrossel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagens/foto3carrossel.png" class="d-block w-100" alt="imagem 3 carrossel">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!--fim carrossel-->
+
+        <!-- início fotos -->
+        <div>
+        <div class="container-fluid">
+            <div class="row row-cols-md-5 row-cols-md-3 g-4">
+                <div class="col mb-2">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="../imagens/camisabrasil.jpg" class="card-img-top" alt="Camisa 1 Brasil">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Nike Brasil I 2022/23 - Masculina</h5>
+                                <p class="card-text fw-bold">R$349,99</p>
+                                <p class="card-text">ou 5x de R$70,00</p>
+                                <p class="card-text">Personalize</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-2">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="../imagens/camisafranca.jpg" class="card-img-top" alt="Camisa 1 França">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Nike França I 2022/23 - Masculina</h5>
+                                <p class="card-text fw-bold">R$385,99</p>
+                                <p class="card-text">ou 5x de R$77,80</p>
+                                <p class="card-text">Personalize</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <div class="card h-100 mb-2">
+                            <img src="../imagens/camisaalemanha.webp" class="card-img-top" alt="Camisa 1 Alemanha">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Adidas Alemanha I 2022/23</h5>
+                                <p class="card-text fw-bold">R$249,90</p>
+                                <p class="card-text">ou 5x de R$50,00</p>
+                                <p class="card-text">Personalize</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-md-5 row-cols-md-3 g-4">
+                <a href="#">
+                    <div class="card h-100">
+                        <img src="../imagens/camisabelgica.webp" class="card-img-top" alt="Camisa 1 Bélgica">
+                        <div class="card-body">
+                            <h5 class="card-title">Camisa Adidas Bélgica I 2022/23 - Masculina</h5>
+                            <span class="card-text fw-bold">R$269,90</span>
+                            <p class="card-text">ou 5x de R$54,00</p>
+                            <p class="card-text">Personalize</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="../imagens/camisacamaroes.webp" class="card-img-top" alt="Camisa 1 Camaroes">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Puma Camarões I 2022/23 - Masculina</h5>
+                                <span class="card-text fw-bold">R$249,90</span>
+                                <p class="card-text">ou 5x de R$50,00</p>
+                                <p class="card-text">Personalize</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <div class="card h-100 mt-2">
+                            <img src="../imagens/camisacoreia.jpg" class="card-img-top" alt="Camisa 1 Coreia">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Nike Coreia I 2022/23 - Masculina</h5>
+                                <span class="card-text fw-bold">R$320,00</span>
+                                <p class="card-text">ou 5x de R$64,00</p>
+                                <p class="card-text">Personalize</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-md-5 row-cols-md-3 g-4">
+                <a href="#">
+                    <div class="card h-100 mt-2">
+                        <img src="../imagens/camisaargentina.webp" class="card-img-top" alt="Camisa 1 Argentina">
+                        <div class="card-body">
+                            <h5 class="card-title">Camisa Adidas Argentina I 2022/23 - Masculina</h5>
+                            <span class="card-text fw-bold">R$299,90</span>
+                            <p class="card-text">ou 5x de R$60,00</p>
+                            <p class="card-text">Personalize</p>
+                        </div>
+                    </div>
+                </a>
+            
+            <div class="">
+                <a href="#">
+                    <div class="card h-100 mt-2">
+                        <img src="../imagens/camisaespanha.webp" class="card-img-top" alt="Camisa 1 Espanha">
+                        <div class="card-body">
+                            <h5 class="card-title">Camisa Adidas Espanha I 2022/23 - Masculina</h5>
+                            <span class="card-text fw-bold">R$299,99</span>
+                            <p class="card-text">ou 5x de R$60,00</p>
+                            <p class="card-text">Personalize</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="card h-100 mt-2">
+                        <img src="../imagens/camisainglaterra.jpg" class="card-img-top" alt="Camisa 1 Inglaterra">
+                        <div class="card-body">
+                            <h5 class="card-title">Camisa Nike Inglaterra I 2022/23 - Masculina</h5>
+                            <span class="card-text fw-bold">R$299,90</span>
+                            <p class="card-text">ou 5x de R$60,00</p>
+                            <p class="card-text">Personalize</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <!-- fim fotos -->
+    </main>
+
+    <aside class="col-3 float-end">
+        <!-- Início itens mais vistos -->
+        <div class="card">
+            <div class="card-header bg-light mt-3">
+                <span class="text-center">
+                    <h5>Itens mais vendidos</h5>
+                </span>
+            </div>
+            <div class="card-body bg-light">
+                <div class="flex-row">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../imagens/jaquetaflamengo.webp" class="img-fluid" alt="Jaqueta Flamengo">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Jaqueta pré-jogo CR Flamengo 2023</h5>
+                                <p class="card-text fw-bold">R$599,99</p>
+                                <a href="#" class="btn btn-primary">Visualizar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body bg-light">
+                    <div class="flex-rol">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../imagens/jaquetacruzeiro.webp" class="img-fluid" alt="Jaqueta Cruzeiro">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jaqueta pré-jogo Cruzeiro 2023</h5>
+                                    <p class="card-text fw-bold">R$599,99</p>
+                                    <a href="#" class="btn btn-primary">Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body bg-light">
+                    <div class="flex-rol">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../imagens/maisvendidopalm.webp" class="img-fluid" alt="Camisa Palmeiras">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa Palmeiras Jogador Away</h5>
+                                    <p class="card-text fw-bold">R$429,90</p>
+                                    <a href="#" class="btn btn-primary">Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body bg-light">
+                    <div class="flex-rol">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../imagens/camisapsg.webp" class="img-fluid" alt="Camisa PSG">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa Nike PSG I 2022/23</h5>
+                                    <p class="card-text text-decoration-line-through">R$399,99</p>
+                                    <p class="card-text fw-bold">R$429,90</p>
+                                    <a href="#" class="btn btn-primary">Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body bg-light">
+                    <div class="flex-rol">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="../imagens/camisacorinth.webp" class="img-fluid" alt="Camisa Corinthians">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa Corinthians I 22/23</h5>
+                                    <p class="card-text fw-bold">R$189,99</p>
+                                    <a href="#" class="btn btn-primary">Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </aside>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <h5>Sobre a loja:</h5>
+                <span>Especializada em camisas de futebol e artigos esportivos, a loja virtual reúne uniformes completos
+                    dos mais variados clubes brasileiros, internacionais e seleções - dos mais consagrados aos menos
+                    conhecidos. Com a maior variedade em camisas de times de futebol no mercado nacional, a FutFanatics
+                    trabalha em parceria com as principais marcas esportivas para comercializar somente produtos
+                    originais e com garantia de qualidade. Além disso, a loja possui certificados de segurança que
+                    oferecem ao cliente um ambiente de compra confiável. </span>
+            </div>
+            <!-- Left -->
+        </section>
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Métodos de pagamento
+                        </h6>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-google-pay"></i>
+                        <br>
+                        <i class="fa-brands fa-apple-pay"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links úteis
+                        </h6>
+                        <a href="#">
+                            <p>Ajuda</p>
+                        </a>
+                        <a href="#">
+                            <p>Política de envio</p>
+                        </a>
+                        <a href="#">
+                            <p>Cancelamento e devolução</p>
+                        </a>
+                        <a href="#">
+                            <p>FAQ</p>
+                        </a>
+                        <a href="#">
+                            <p>Política de privacidade</p>
+                        </a>
+                        <a href="#">
+                            <p>Termos de regulamento</p>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Redes sociais
+                        </h6>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Fale conosco</h6>
+                        <a href="#">
+                            <span>Portal de ajuda</span>
+                        </a>
+                        <br>
+                        <a href="#">
+                            <span>Trabalhe conosco</span>
+                        </a>
+                        <br>
+                        <a href="">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>1800 4400 22</span>
+                        </a>
+                        <br>
+                        <a href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@company.com</span>
+                        </a>
+                        <br>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>(18) 3345-0405</span>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright: FutFanatics
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
